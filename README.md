@@ -27,7 +27,8 @@ Il est conçu pour être lu **par les humains et par les assistants IA** (Claude
 │
 ├── docs/                      # Que doit faire le logiciel et comment est-il conçu ?
 │   ├── requirements.md        # Exigences, critères d'acceptation, traçabilité
-│   └── architecture.md        # Architecture (arc42 + C4), données, déploiement, ADR
+│   ├── architecture.md        # Architecture (arc42 + C4), données, déploiement, ADR
+│   └── design-UX-UI.md        # Identité visuelle, design system, principes et conventions UX/UI
 │
 ├── rules/                     # Quelles politiques techniques respecter ?
 │   ├── README.md              # Gouvernance : index, identifiants, autorité, dérogations, gravité
@@ -71,6 +72,8 @@ Il est conçu pour être lu **par les humains et par les assistants IA** (Claude
    |---|---|
    | Nom, objectifs, utilisateurs, exigences, seuils (performance, disponibilité, RPO/RTO, accessibilité…) | `docs/requirements.md` |
    | Technologies, composants, données, déploiement, décisions (ADR) | `docs/architecture.md` |
+   | Identité de marque, liens Figma, design system, parcours, conventions UX/UI | `docs/design-UX-UI.md` |
+   | Valeurs graphiques (couleurs, polices, espacements…) | Fichiers de design tokens (localisés dans `docs/design-UX-UI.md`) |
    | Langages, versions, outils de lint/format | `rules/code-style.md` |
    | Commandes concrètes (build, tests, lint…) et structure du dépôt | `AGENTS.md` |
    | Propriétaires des règles, autorités de dérogation | `rules/README.md` |
@@ -100,6 +103,7 @@ grep -rn "{{" --include=*.md .
 |---|---|
 | `FR`, `NFR-*`, `BR`, `UC`, `INT`, `CON` | `docs/requirements.md` |
 | `ADR` | `docs/architecture.md` |
+| `UX` | `docs/design-UX-UI.md` |
 | `GOV` | `rules/README.md` |
 | `CS`, `AP`, `API`, `SEC`, `TST`, `BKP`, `SBX`, `OBS`, `REL` | Fichier correspondant de `rules/` |
 | `WF` | `agents/agent-workflow.md` |

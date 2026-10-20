@@ -67,6 +67,7 @@ Chaque règle significative porte un identifiant stable : `<PRÉFIXE>-<NNN>` (ex
 |---|---|---|
 | `FR`, `NFR-*`, `BR`, `UC`, `INT`, `CON` | [docs/requirements.md](../docs/requirements.md) | Exigences produit |
 | `ADR` | [docs/architecture.md](../docs/architecture.md) | Décisions d'architecture |
+| `UX` | [docs/design-UX-UI.md](../docs/design-UX-UI.md) | Identité visuelle, design system, conventions UX/UI |
 | `GOV` | ce fichier | Gouvernance des règles |
 | `CS` | [code-style.md](code-style.md) | Conventions de code |
 | `AP` | [anti-pattern.md](anti-pattern.md) | Anti-patterns |
@@ -236,6 +237,8 @@ Utilisée par tous les agents, revues et Quality Gates ([release-conventions.md]
 | Fonctionnalités et acceptation | `docs/requirements.md` | Agents et tests vérifient |
 | Seuils de performance, disponibilité, RPO/RTO | `docs/requirements.md` | `testing`, `observability`, `backup-conventions` opérationnalisent |
 | Style architectural, modules, ADR | `docs/architecture.md` | Agents contrôlent la cohérence |
+| Identité de marque, ressources de design, design system, parcours, conventions UX/UI | `docs/design-UX-UI.md` | Agents et code appliquent ; `requirements` fixe les cibles mesurables |
+| Valeurs graphiques (couleurs, typographies, espacements, durées…) | Fichiers de design tokens (désignés dans `docs/design-UX-UI.md § 2.3`) | Aucun autre document ne les recopie |
 | Qualité locale du code | `rules/code-style.md` | `code-reviewer` applique |
 | Diagnostic d'anti-patterns | `rules/anti-pattern.md` | `code-reviewer` identifie |
 | Contrats d'API | `rules/api-conventions.md` | Implémentation et tests respectent |

@@ -52,6 +52,7 @@ version: "0.1.0"
 | Diff complet et description de la PR | Objet de la revue |
 | Tickets / exigences liées (`FR-*`, `NFR-*`) | Vérifier que le besoin est couvert |
 | [docs/architecture.md](../docs/architecture.md) (modules, règles de dépendance, ADR) | Cohérence structurelle |
+| [docs/design-UX-UI.md](../docs/design-UX-UI.md), maquettes et tokens référencés | Changements d'interface |
 | [code-style.md](../rules/code-style.md), [anti-pattern.md](../rules/anti-pattern.md), [testing.md](../rules/testing.md), [api-conventions.md](../rules/api-conventions.md) | Critères |
 | Résultats de CI (tests, lint, couverture, analyses) | Preuves d'exécution |
 | Code environnant non modifié | Contexte, effets de bord, conventions locales |
@@ -80,6 +81,7 @@ Examiner dans cet ordre (du plus coûteux à corriger tard au moins coûteux) :
 | 8 | **Lisibilité et maintenabilité** | Noms, taille, complexité, duplication de connaissance, commentaires utiles, code mort, `TODO` sans ticket ? | `CS-020`…`CS-111`, `AP-1xx` |
 | 9 | **Observabilité** | Les opérations importantes sont-elles observables ? Logs structurés sans données sensibles ? | `OBS-001`…`OBS-024` |
 | 10 | **Performance** | Coût algorithmique raisonnable au volume prévu ? Optimisation prématurée ? | `NFR-PERF-*`, `AP-111` |
+| 10 bis | **Interface utilisateur** (si concernée) | Composants du design system réutilisés ? Tokens utilisés plutôt que des valeurs codées en dur ? États chargement / erreur / vide prévus ? Responsive et accessibilité ? Conforme aux maquettes et parcours ? | `docs/design-UX-UI.md` (`UX-021`, `UX-030`, `UX-050`, `UX-080`, `UX-110`) |
 | 11 | **Documentation** | Docstrings des API publiques, README, changelog, ADR à jour ? | `CS-091`, `REL-075` |
 | 12 | **Hygiène du diff** | Changements hors périmètre, fichiers de débogage, reformatage parasite, secrets, fichiers générés modifiés à la main ? | `WF-002`, `CS-012`, `CS-121` |
 

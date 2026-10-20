@@ -21,6 +21,7 @@ Note : métadonnées en commentaire HTML car ce fichier est lu tel quel par les 
 - **Statut :** `{{EX: en développement actif, en production depuis …}}`
 - **Exigences et objectifs :** [docs/requirements.md](docs/requirements.md)
 - **Architecture et décisions (ADR) :** [docs/architecture.md](docs/architecture.md)
+- **Identité visuelle, design system et UX/UI :** [docs/design-UX-UI.md](docs/design-UX-UI.md)
 
 ## 2. Technologies
 
@@ -88,6 +89,7 @@ Toute tâche suit [agents/agent-workflow.md](agents/agent-workflow.md) : classer
 | Si la tâche touche… | Lire |
 |---|---|
 | N'importe quel code | [rules/code-style.md](rules/code-style.md) |
+| Une interface utilisateur (écran, composant, style, parcours, texte affiché) | [docs/design-UX-UI.md](docs/design-UX-UI.md) — en particulier § 16 (règles pour les agents) |
 | Une API, un événement, un webhook | [rules/api-conventions.md](rules/api-conventions.md) |
 | Authentification, autorisation, données, secrets, dépendances, entrées externes, IA | [rules/security-conventions.md](rules/security-conventions.md) |
 | Des tests (toujours, dès qu'un comportement change) | [rules/testing.md](rules/testing.md) |
